@@ -1,0 +1,137 @@
+import Pedido from "./Pedido"
+
+//não consegui fazer o codigo para usar está lista, provalvemente o git tem do prof
+const pedidos = [
+
+  {
+
+    data: '23/07/26',
+
+    icone: 'fa-solid fa-hdd',
+
+    titulo: 'SSD',
+
+    descricao: 'SSD lol'
+
+  },
+
+  {
+
+    data: '24/07/26',
+
+    icone: 'fa-solid fa-book',
+
+    titulo: 'Livro',
+
+    descricao: 'Livro lol'
+
+  },
+
+  {
+
+    data: '25/07/26',
+
+    icone: 'fa-solid fa-dog',
+
+    titulo: 'Cachorro',
+
+    descricao: 'Ca lol'
+
+  },
+
+  {
+
+    data: '26/07/26',
+
+    icone: 'fa-solid fa-laptop',
+
+    titulo: 'Notebook',
+
+    descricao: 'Notebook lol'
+
+  }
+
+]
+
+const App = () => {
+
+  return (
+
+    <div className="container border rounded mt-2">
+
+      <div className="row">
+
+        <div className="col-12">
+
+          <i className="fa-solid fa-hippo"></i>
+
+        </div>
+
+      </div>
+
+      <div className="row">
+
+        <div className="col-12">
+
+          <h1 className="display-5 text-center">Seus pedidos</h1>
+
+        </div>
+
+      </div>
+
+      <div className="row">{/* mobile first */}
+
+        <div className="col-12 col-md-6 col-xl-3">
+
+          <Pedido 
+            data="23/07/26"
+            icone= "fa-solid fa-hdd"
+            titulo= "SSA"
+            descricao="SSD lol"
+            />
+
+        </div>
+
+        <div className="col-12 col-md-6 col-xl-3">
+
+          <Pedido 
+            data="23/07/26"
+            icone= "fa-solid fa-book"
+            titulo= "livro"
+            descricao="livro lol"
+
+          />
+
+        </div>
+
+        <div className="col-12 col-md-6 col-xl-3">
+
+          <Pedido 
+            data="23/07/26"
+            icone= "fa-solid fa-hdd"
+            titulo= "cachorro"
+            descricao="ca lol"          
+          />
+
+        </div>
+
+        <div className="col-12 col-md-6 col-xl-3">
+
+          <Pedido 
+           data="23/07/26"
+            icone= "fa-solid fa-hdd"
+            titulo= "SSA"
+            descricao="SSD lol"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  )
+
+}
+
+export default App
